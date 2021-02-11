@@ -30,6 +30,93 @@
             </ul>
         </nav>
         <main>
+            <form action="https://formdump.codeinstitute.net" method="POST">
+                <fieldset>
+                    <legend>Personal Information</legend>
+
+                    <div>
+                        <label for="first-name">First Name:*</label>
+                        <input type="text" name="first-name" required maxlength="25">
+                    </div>
+                    <br>
+                    <div>
+                        <label>Last Name:*</label>
+                        <input type="text" name="last-name" required maxlength="25">
+                    </div>
+                    <br>
+                    <div>
+                        <label>Email:*</label>
+                        <input type="email" name="email" required maxlength="35">
+                    </div>
+                    <br>
+
+                    <div>
+                        Please select the music genre(s) that you like:
+                        <br>
+                        <input type="checkbox" name="musicgenre" checked="checked" value="classic" id="classic">
+                        <label for="classic">Classic</label>
+                        <br>
+                        <input type="checkbox" name="musicgenre" checked value="jazz" id="jazz">
+                        <label for="jazz">Jazz</label>
+                        <br>
+                        <input type="checkbox" name="musicgenre" value="blues" id="blues">
+                        <label for="blues">Blues</label><br>
+                        <input type="checkbox" name="musicgenre" value="instrumental" id="instrumental">
+                        <label for="instrumental">Instrumental</label><br>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Your Message</legend>
+                    <div>
+                        <label for="hearaboutus">How did you hear about us?</label>
+                        <select name="hearaboutus">
+                            <option value="website">Our Website</option>
+
+                            <option value="friend">Friend</option>
+                            <option value="tvad">TV Adv</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <br>
+                    <div>
+                        Would you recommend us to your friends?
+                        <br>
+                        <input type="radio" name="recommend" checked="checked" value="yes">Yes
+                        <br>
+                        <input type="radio" name="recommend" value="no">No
+                        <br>
+                        <input type="radio" name="recommend" value="maybe">Maybe
+                        <br>
+                    </div>
+                    <div>
+                        <label for="yourrequest">Your request:</label><br>
+                        <textarea name="yourrequest" id="yourrequest" cols="30" rows="7"></textarea>
+                    </div>
+                    <br>
+                    <div>
+                        <input type="checkbox" name="signupforemailupdates" checked="checked"
+                            value="signupforemailupdates">
+                        <label for="signupforemailupdates">Sign me up for email updates</label>
+                    </div>
+                    <br>
+                    <button type="submit">
+                        Submit
+                    </button>
+                </fieldset>
+            </form>
+
+            <br>
+            <div>
+                <h4>Navigate in the map to find us</h4>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2885.8629158235067!2d-79.3920915850233!3d43.67182075924538!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b2e0b64e1140d%3A0xd11156503e310196!2sSpa%20at%20Four%20Seasons%20Toronto!5e0!3m2!1sen!2sca!4v1612967766746!5m2!1sen!2sca"
+                    width="600" height="450" frameborder="1" style="border:1;" allowfullscreen="" aria-hidden="false"
+                    tabindex="0">
+                    <p>Sorry, Your browser does not support iframe element!</p>
+
+                </iframe>
+            </div>
+
 
         </main>
         <footer>
